@@ -2,143 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anett Rolikova - Crypto DevRel Strategist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anett Rolikova — DevRel</title>
+  <meta name="description" content="Developer Advocate with 6+ years of experience in the Crypto industry. I help crypto startups cut through the noise by turning complex tech into products which developers actually use." />
+  <meta property="og:title" content="Anett Rolikova — Developer Relations Advocate" />
+  <meta property="og:description" content="I help crypto startups cut through the noise by turning complex tech into products that developers actually use." />
+  <meta name="theme-color" content="#0f6bff" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      color: #fff;
-      line-height: 1.6;
+    :root{
+      --text:#0a1a2b;
+      --muted:#4b5b6c;
+      --card:#ffffffee;
+      --accent:#0f6bff;
+      --accent-2:#4da3ff;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: linear-gradient(135deg, #eaf2ff 0%, #d8e8ff 35%, #b9d2ff 70%, #a6c8ff 100%);
+      background-attachment: fixed;
+      line-height:1.6;
     }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
-    }
-    header h1 {
-      margin: 1rem 0 0.5rem;
-      font-size: 2.2rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    blockquote {
-      font-size: 1.3rem;
-      font-style: italic;
-      border-left: 4px solid #ffcc70;
-      padding-left: 1rem;
-      margin: 2rem 0;
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.6rem;
-      color: #ffcc70;
-    }
-    h3 {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      color: #ffe29f;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin: 0.4rem 0;
-    }
-    .cta {
-      display: block;
-      text-align: center;
-      margin: 3rem 0 1rem;
-    }
-    .cta a {
-      background: #ffcc70;
-      color: #1f1c2c;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-    .cta a:hover {
-      background: #ffe29f;
-    }
-    hr {
-      border: none;
-      height: 1px;
-      background: rgba(255,255,255,0.2);
-      margin: 2rem 0;
+    .container{max-width:1024px;margin:0 auto;padding:24px}
+    .card{background:var(--card);backdrop-filter:saturate(140%) blur(6px); border:1px solid rgba(10,26,43,.06); box-shadow:0 10px 30px rgba(15,107,255,.08); border-radius:20px}
+    header{display:grid;grid-template-columns:120px 1fr; gap:20px; align-items:center; padding:28px}
+    header img{width:120px;height:120px;border-radius:20px;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    h1{margin:0;font-size:28px;line-height:1.2}
+    .subtitle{margin:4px 0 0 0;color:var(--muted);font-size:16px}
+    .tagline{margin-top:10px;font-weight:600}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid rgba(15,107,255,.25);text-decoration:none;font-weight:600}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .btn.secondary{background:#fff;color:var(--accent);}
+
+    section{padding:22px 28px;border-top:1px solid rgba(10,26,43,.06)}
+    section h2{margin:0 0 10px 0;font-size:20px}
+    .expertise{display:grid;grid-template-columns:1fr;gap:16px}
+    .expertise .item{background:#fff;border:1px solid rgba(10,26,43,.06);border-radius:16px;padding:16px}
+    .item h3{margin:0 0 8px 0;font-size:18px}
+    .item .goal{font-weight:700}
+    .item .how{margin-top:6px}
+
+    .footer-cta{display:flex;flex-direction:column;gap:10px}
+    .footer-cta a{color:#fff;text-decoration:none}
+    .footer-cta .cta-card{background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-radius:16px; padding:20px; box-shadow:0 12px 28px rgba(15,107,255,.28)}
+
+    /* Responsive */
+    @media (max-width:640px){
+      header{grid-template-columns:1fr; text-align:center}
+      header img{margin:0 auto}
+      .cta-row{justify-content:center}
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="https://pbs.twimg.com/profile_images/1239269511561457665/qWkxcDFd_400x400.jpg" alt="Anett Rolikova">
-      <h1>Anett Rolikova</h1>
-      <p>Developer Advocate with 6+ years of experience in the Crypto industry</p>
-    </header>
+    <div class="card">
+      <header>
+        <img src="https://pbs.twimg.com/profile_images/1239269511561457665/qWkxcDFd_400x400.jpg" alt="Anett Rolikova portrait" />
+        <div>
+          <h1> Anett Rolikova</h1>
+          <p class="subtitle">Developer Relations Advocate with over 6 years of experiences in the Crypto industry</p>
+          <p class="tagline"><strong>I help crypto startups cut through the noise by turning complex tech into products developers actually use.**</strong></p>
+          <p>I'm a human-first DevRel & Community strategist who helps early-stage crypto founders build ecosystems that last.*</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://calendly.com/anett-rolikova/" target="_blank" rel="noopener"> Let's chat</a>
+            <a class="btn secondary" href="https://x.com/AnettRolikova" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <h2> <strong>My main areas of expertise</strong></h2>
+        <div class="expertise">
+          <div class="item">
+            <h3> <strong>1. Infra & Partnerships</strong></h3>
+            <p class="goal"><strong>Goal:</strong> Expand your network, integrate into the right ecosystems, and close high-value collaborations.</p>
+            <ul>
+              <li>Identify &amp; connect with potential partners</li>
+              <li>Build co-marketing &amp; co-development campaigns</li>
+              <li>Position your infra as the go-to choice for integrations</li>
+            </ul>
+          </div>
 
-    <blockquote>
-      I help crypto startups cut through the noise by turning complex tech into products developers actually use.
-    </blockquote>
+          <div class="item">
+            <h3> <strong>2. User Onboarding &amp; Growth</strong></h3>
+            <p class="goal"><strong>Goal:</strong> Turn curious visitors into loyal product users.</p>
+            <ul>
+              <li>Create seamless onboarding flows</li>
+              <li>Organize creative activations &amp; events</li>
+              <li>Translate product value into a language people understand</li>
+            </ul>
+          </div>
 
-    <section>
-      <h2>Intro sentence</h2>
-      <p><em>A human-first DevRel & community strategist who helps early-stage crypto founders build ecosystems that stick — whether your audience is partners, users, or developers.</em></p>
-    </section>
-
-    <hr>
-
-    <section>
-      <h2>Three Ways I Help Founders</h2>
-
-      <h3>1. Infra & Partnerships</h3>
-      <p><strong>Goal:</strong> Expand your network, integrate into the right ecosystems, and close high-value collaborations.</p>
-      <ul>
-        <li>Identify & connect with potential partners</li>
-        <li>Build co-marketing & co-development campaigns</li>
-        <li>Position your infra as the go-to choice for integrations</li>
-      </ul>
-
-      <h3>2. User Onboarding & Growth</h3>
-      <p><strong>Goal:</strong> Turn curious visitors into loyal product users.</p>
-      <ul>
-        <li>Create seamless onboarding flows</li>
-        <li>Organize creative activations & events</li>
-        <li>Translate product value into language people <em>get</em></li>
-      </ul>
-
-      <h3>3. Developer Onboarding & Adoption</h3>
-      <p><strong>Goal:</strong> Make developers want to build on your product.</p>
-      <ul>
-        <li>Audit & improve dev experience (DX) & docs</li>
-        <li>Design technical workshops, hackathons, and demos</li>
-        <li>Build relationships inside dev communities</li>
-      </ul>
-    </section>
-
-    <hr>
-
-    <section class="cta">
-      <p><strong>Let's talk!</strong></p>
-      <p>About how to get your product into the hands of the right people and grow your community of enthusiasts.</p>
-      <a href="https://calendly.com/anett-rolikova/">📅 Book a 30-min call</a>
-    </section>
+          <div class="item">
+            <h3> <strong>3. Developer Onboarding &amp; Adoption</strong></h3>
+            <p class="goal"><strong>Goal:</strong> Make developers want to build on your product.</p>
+            <ul>
+              <li>Audit &amp; improve dev experience (DX) &amp; docs</li>
+              <li>Design technical workshops, hackathons, and demos</li>
+              <li>Build relationships inside dev communities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-cta">
+        <div class="cta-card">
+          <h2> <strong>Let's talk about how to get your product into the hands of the right people and grow your community of enthusiasts.</strong></h2>
+           <a class="btn primary" href="https://calendly.com/anett-rolikova/" target="_blank" rel="noopener"> Schedule a quick chat with me</a>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 </html>
+
